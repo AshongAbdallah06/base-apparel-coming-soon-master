@@ -5,29 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
-  We're coming soon
+  <main>
+    <div class="left-side-container">
+      <a href="#">
+        <img src="images/logo.svg" class="logo" alt="">
+      </a>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+      <div class="coming-soon">
+        <span>WE'RE</span> COMING SOON
+      </div>    
+      
+      <div class="message">
+        Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.    
+      </div>
 
-  Email Address
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+      <div class="input">
+        <input type="text" class="email" placeholder="Email Address">
+        <img src="images/icon-error.svg" alt="error" class="error-icon">
+        <button class="next">
+          <a href="#"><img src="images/icon-arrow.svg" class="arrow" alt=""></a>
+        </button>
+      </div>    
+    </div>
+
+
+    <div class="right-side-container">
+      <a href="#">
+        <img src="images/hero-desktop.jpg" class="hero-image" alt="">
+      </a>
+    </div>
+  </main>
+
+
+
+    
+    
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Ashong Abdallah</a>.
+      </p>
+    </footer>
+
+  <script type="module" src="index.js"></script>
 </body>
 </html>

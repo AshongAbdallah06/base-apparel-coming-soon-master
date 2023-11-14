@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-side-container {
+    padding: 30px 100px;
+    padding-left: 150px;
+}
+
+.logo {
+    height: 28px;
+}
+
+.coming-soon {
+    margin-top: 100px;
+    width: 200px;
+    font-size: 50px;
+    line-height: 55px;
+    font-weight: 600;
+    letter-spacing: 13px;
+}
+
+span {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+
+.message {
+    color: hsl(0, 36%, 70%);
+    margin-top: 20px;
+    width: 350px;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+.input {
+    margin-top: 30px;
+    position: relative;
+}
+
+.email {
+    width: 300px;
+    padding: 12px 0;
+    padding-left: 20px;
+    border-radius: 35px;
+    border: 1px solid hsla(0, 36%, 70%, 0.5);
+    border-right: none;
+}
+
+.email:focus {
+    outline: none;
+}
+
+.email::placeholder {
+    color: hsla(0, 36%, 70%, 0.5);
+}
+
+.error-icon {
+    display: none;
+    height: 20px;
+    position: absolute;
+    top: 12px;
+    right: 80px;
+}
+
+.is-error {
+    display: initial;
+}
+
+.email-error {
+    border-color: red;
+}
+
+button {
+    padding: 10px 20px;
+    padding-bottom: 12px;
+    /* margin-left: -35px; */
+    position: absolute;
+    right: 0;
+    width: 70px;
+    border-radius: 20px;
+    background-image: linear-gradient(to left, hsl(0, 100%, 80%), hsl(0, 100%, 89%));
+    border: none;
+    cursor: pointer;
+}
+
+.arrow {
+    height: 16px;
+}
+
+.hero-image {
+    height: 100vh;
+    width: 450px;
+}
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute; 
+    bottom: -50px;
+    right: 0;
+    left: 0;
+  }
+  
+  .attribution a { 
+    color: hsl(228, 45%, 44%);
+  }
