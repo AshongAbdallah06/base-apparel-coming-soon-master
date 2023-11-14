@@ -12,15 +12,11 @@ function checkEmail() {
         email.classList.remove('email-error');
 
         document.querySelector('.error-message').innerHTML = '';
-
-
-        // emailInput = 's';
     } else {
         document.querySelector('.error-icon').classList.add('is-error')
         email.classList.add('email-error')
 
         document.querySelector('.error-message').innerHTML = "Please provide a valid email";
-        // alert("No")
     }
 }
 
@@ -51,9 +47,8 @@ function checkStyles() {
     }
 }
 
+// Initial load when page is opened
 checkStyles();
-
-
 
 window.addEventListener('resize', () => {
     checkStyles();
