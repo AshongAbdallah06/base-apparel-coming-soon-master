@@ -54,7 +54,8 @@ span {
     border-right: none;
 }
 
-.email:focus {
+.email:focus,
+button:focus {
     outline: none;
 }
 
@@ -66,7 +67,7 @@ span {
     display: none;
     height: 20px;
     position: absolute;
-    top: 12px;
+    top: 11px;
     right: 80px;
 }
 
@@ -76,6 +77,12 @@ span {
 
 .email-error {
     border-color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-left: 20px;
 }
 
 button {
@@ -89,6 +96,16 @@ button {
     background-image: linear-gradient(to left, hsl(0, 100%, 80%), hsl(0, 100%, 89%));
     border: none;
     cursor: pointer;
+}
+
+button:hover {
+    background-image: linear-gradient(to left, hsl(0, 91%, 86%), hsl(0, 80%, 88%));
+    box-shadow: -1px 10px 10px rgba(255, 160, 160, 0.5);
+}
+
+button:active {
+    background-image: linear-gradient(to left, hsl(0, 69%, 72%), hsl(0, 80%, 88%));
+
 }
 
 .arrow {
