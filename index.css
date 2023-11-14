@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    padding-bottom: 50px;
 }
 
 main {
@@ -112,13 +113,10 @@ button:active {
     height: 16px;
 }
 
-.hero-image {
-    height: 100vh;
+.hero-desktop-image {
+    height: 98vh;
     width: 450px;
 }
-
-
-
 
 .attribution { 
     font-size: 11px; 
@@ -127,8 +125,54 @@ button:active {
     bottom: -50px;
     right: 0;
     left: 0;
-  }
+}
   
-  .attribution a { 
+.attribution a { 
     color: hsl(228, 45%, 44%);
-  }
+}
+
+
+@media (max-width: 800px) {
+    main {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .left-side-container {
+        padding: 25px;
+    }
+
+    .coming-soon {
+        margin: 0;
+        margin-top: 50px;
+        width: 300px;
+        text-align: center;
+        margin-left: 40px;
+        font-size: 40px;
+        letter-spacing: 10px;
+    }
+
+    .message {
+        text-align: center;
+        width: 320px;
+        margin-left: 30px;
+        font-size: 15px;
+    }
+
+    button {
+        right: 20px;
+    }
+
+    .error-icon {
+        right: 100px;
+    }
+
+    .hero-mobile-image {
+        margin-top: 30px;
+    }
+    
+    .attribution {
+        bottom: -200px;
+    }
+}

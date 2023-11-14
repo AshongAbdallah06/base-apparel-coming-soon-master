@@ -25,6 +25,41 @@ function checkEmail() {
 }
 
 
+
+function checkStyles() {
+    const width = window.innerWidth;
+
+    let rightSideContainer = document.querySelector('.right-side-container');
+
+    if (width <= 800) {
+
+        rightSideContainer.innerHTML = '';
+
+        document.querySelector('.container').innerHTML = `
+            <a href="#">
+                <img src="images/hero-mobile.jpg" class="hero-mobile-image" alt="">
+            </a>
+        `
+    } else {
+        document.querySelector('.container').innerHTML = ''
+
+        rightSideContainer.innerHTML = `
+        <a href="#">
+            <img src="images/hero-desktop.jpg" class="hero-desktop-image" alt="">
+        </a>
+    `
+    }
+}
+
+checkStyles();
+
+
+
+window.addEventListener('resize', () => {
+    checkStyles();
+})
+
+
 email.addEventListener('keypress', () => {
     checkEmail();
 })
