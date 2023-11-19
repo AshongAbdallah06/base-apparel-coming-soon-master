@@ -55,11 +55,11 @@ window.addEventListener('resize', () => {
 })
 
 
-email.addEventListener('keypress', () => {
+email.addEventListener('keyup', () => {
     checkEmail();
 })
 
-document.body.addEventListener('keydown', (event) => {
+document.body.addEventListener('keyup', (event) => {
     if (event.key === "Backspace") {
         checkEmail();
     }
